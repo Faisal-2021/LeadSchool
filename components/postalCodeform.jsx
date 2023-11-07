@@ -49,7 +49,7 @@ function PostalCodeform({}) {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className=" w-5 h-5 inline-flex hover:scale-125 hover:rotate-180 duration-500 ease-in stroke-red-200 hover:stroke-red-500"
+            className=" hidden w-5 h-5 sm:inline-flex hover:scale-125 hover:rotate-180 duration-500 ease-in stroke-red-200 hover:stroke-red-500"
           >
             <path d="M18 6 6 18" />
             <path d="m6 6 12 12" />

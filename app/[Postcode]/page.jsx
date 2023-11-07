@@ -19,9 +19,9 @@ export default async function PostalCode({ params }) {
 
 
   return (
-    <div className=" my-20 text-lg font-semibold text-gray-800 ">
+    <div className=" my-28 md:my-20 text-lg font-semibold text-gray-800 ">
       {!data.country ? (
-        <p className="flex items-center justify-center  text-red-500 text-center text-2xl animate-pulse duration-1000 ease-in-out">
+        <p className="flex items-center justify-center py-5 text-red-500 text-center text-2xl animate-pulse duration-1000 ease-in-out">
           {data}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,13 +31,12 @@ export default async function PostalCode({ params }) {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className=" inline-flex h-7 w-7 mx-2 animate-bounce duration-1000"
+            className=" inline-flex h-7 w-7 mx-2 animate-wiggle"
           >
             <circle cx="12" cy="12" r="10" />
             <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
             <line x1="9" x2="9.01" y1="9" y2="9" />
             <line x1="15" x2="15.01" y1="9" y2="9" />
-            <line x1="12" x2="15.01" y1="2" y2="1" />
           </svg>
         </p>
       ) : (
